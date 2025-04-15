@@ -1,5 +1,5 @@
 #include "scheduler.h"
-#include "fsm_cx1.h"
+#include "tra_fsm_cx1.h" // "ana_fsm_cx1.h" for analogue clock
 #include "softwareTimer.h"
 #include "Arduino.h"
 
