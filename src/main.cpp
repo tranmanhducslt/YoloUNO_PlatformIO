@@ -1,15 +1,12 @@
 #include "scheduler.h"
-#include "DHT20.h"
+#include "ht_sensor.h"
 #include "softwareTimer.h"
 #include "Arduino.h"
 
 void setup(){
     SCH_Init();
     timerInit();
-
-    Wire.begin(GPIO_NUM_11, GPIO_NUM_12); // Initialize I2C with data and clock pins
-    Serial.begin(115200);
-    delay(100); // Wait for serial connection
+    SCH_Add_Task(HTSensor_Read, 0, 5000); // Read sensor every 5 seconds
 }
 
 void loop(){
