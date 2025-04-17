@@ -8,5 +8,4 @@
 extern float temperature;
 extern float humidity;
 
-void ht_sensor_init(uint8_t i2c_address, uint8_t pin, uint8_t type, uint32_t interval);
-void ht_sensor_read(void);
+void HTSensor_Read(void);
