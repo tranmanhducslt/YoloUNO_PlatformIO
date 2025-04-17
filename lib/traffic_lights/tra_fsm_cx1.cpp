@@ -1,5 +1,5 @@
-#include "softwareTimer.h"
-#include "fsm_cx1.h"
+#include "../Z/softwareTimer.h"
+#include "tra_fsm_cx1.h"
 #include "Arduino.h"
 
 #define D3 6

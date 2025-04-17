@@ -1,5 +1,5 @@
-#include "softwareTimer.h"
-#include "fsm_cx1.h"
+#include "../Z/softwareTimer.h"
+#include "ana_fsm_cx1.h"
 #include "Arduino.h"
 
 // 4 light devices, each to 2 pins
